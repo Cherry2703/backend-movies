@@ -1,0 +1,55 @@
+###
+GET http://localhost:3010/
+
+
+###
+GET http://localhost:3010/movies
+
+
+###
+GET http://localhost:3010/movies/105
+
+
+###
+POST http://localhost:3010/movies
+Content-Type: application/json
+
+{
+    "movie_id":111,
+    "movie_name":"Deadpool",
+    "movie_collection_in_cr":600,
+    "movie_genre":"Action",
+    "movie_rating":7
+}
+
+# {
+#     "movie_id":112,
+#     "movie_name":"Deadpool 2",
+#     "movie_collection_in_cr":800,
+#     "movie_genre":"Action",
+#     "movie_rating":7
+# }
+
+# {
+#     "movie_id":113,
+#     "movie_name":"Deadpool & Wolverin",
+#     "movie_collection_in_cr":800,
+#     "movie_genre":"Action",
+#     "movie_rating":7
+# }
+
+
+###
+DELETE http://localhost:3010/movies/113
+
+
+###
+PUT http://localhost:3010/movies/111
+Content-Type: application/json
+
+{
+    "movie_name":"Deadpool",
+    "movie_collection_in_cr":620,
+    "movie_genre":"Action",
+    "movie_rating":8
+}
